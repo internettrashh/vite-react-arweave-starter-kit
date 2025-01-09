@@ -1,0 +1,27 @@
+{
+  "manifest": "arweave/paths",
+  "version": "0.2.0",
+  "index": {
+    "path": "index-939b0dd3.html"
+  },
+  "paths": {
+    "assets/index-fbnN9u7O.js": {
+      "id": "G8IoiPtl8L50Oe2nPi0gRQoZHOJZCesKOqud1HV8Ea0"
+    },
+    "assets/index-n_ryQ3BS.css": {
+      "id": "df_pJ5LolxV00VdG4FpP-V-xK_LzBSJnQ0-K_8VTLOc"
+    },
+    "assets/react-CHdo91hT.svg": {
+      "id": "mCEee6dzf1RrbifJ2dgh2CcGtZsQOzx_VWnrG0cMrWU"
+    },
+    "assets/react-ogjpKoOq.js": {
+      "id": "cngklbJgtORPTdL8bwbMdXHgptBYz1iw8vgfVnr7E3I"
+    },
+    "index-939b0dd3.html": {
+      "id": "q9VrlXifzLFsz1ENRkxS7IerMEK0w-jgJ-xI_iyU9q0"
+    },
+    "vite.svg": {
+      "id": "VcOg-xn-akFQlUQffA8KXbIKYrwgY6GsSDiCyYXkjfU"
+    }
+  }
+}
