@@ -57,4 +57,3 @@ This template includes a deployment script that:
 - Creates and uploads an Arweave manifest
 
 > ⚠️ Note: Make sure you have sufficient Turbo Credits in your wallet for deployment. You can purchase credits at https://turbo-topup.com/
-# vite-react-arweave-starter-kit
