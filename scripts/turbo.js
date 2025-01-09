@@ -39,13 +39,9 @@ export default async function TurboDeploy(jwk) {
                 continue;
             }
 
-            // Skip if file hasn't changed and exists in manifest
-            if (manifest.paths[relativePath]) {
-                console.log(`- ${relativePath} (unchanged, skipping)`);
-                continue;
-            }
+            if (manifest.paths[relativePath]) continue;
 
-            console.log(`- ${relativePath} (changed, uploading)`);
+            console.log(`Uploading: ${relativePath}`);
             const uploadResult = await turbo.uploadFile({
                 fileStreamFactory: () => fs.createReadStream(filePath),
                 fileSizeFactory: () => fs.statSync(filePath).size,
@@ -67,7 +63,6 @@ export default async function TurboDeploy(jwk) {
 
     await processFiles(deployFolder);
 
-    // Find the hashed index.html file
     const indexPath = Object.keys(manifest.paths)
         .find(path => path.match(/index-.*html$/i));
     
@@ -75,10 +70,8 @@ export default async function TurboDeploy(jwk) {
         manifest.index.path = indexPath;
     }
 
-    // Save updated manifest
     fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, 2));
 
-    // Upload manifest
     const uploadResult = await turbo.uploadFile({
         fileStreamFactory: () => fs.createReadStream('manifest.json'),
         fileSizeFactory: () => fs.statSync('manifest.json').size,
