@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ## Features
 
-- ⚡️ Vite for fast development and builds
+- ⚡️ Vite for fast development and build
 - ⚛️ React for UI development
 - 🔄 HMR (Hot Module Replacement)
 - 🌐 Arweave deployment ready
